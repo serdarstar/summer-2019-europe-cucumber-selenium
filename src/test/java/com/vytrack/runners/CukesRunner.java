@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         //where our feature files are located
         features = "src/test/resources/features/",
-        glue = "com/vytrack/step_definitions/"
+        glue = "com/vytrack/step_definitions/",
+        dryRun = false,
+        tags = "@navigate or @login"
 )
 public class CukesRunner {
 }
