@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //where our feature files are located
+        plugin = {"json:target/cucumber.json"},
         features = "src/test/resources/features/",
         glue = "com/vytrack/step_definitions/",
         dryRun = false,
